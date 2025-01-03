@@ -10,7 +10,7 @@
 }
 
 #nav>figure{
-    border: 1px solid yellow;
+    border: 1px solid rgba(255, 255, 0, 0.082);
     height: 100%;
     width: 5%;
     display: flex;
