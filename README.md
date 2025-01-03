@@ -22,7 +22,7 @@ Ensure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/user-hive.git
+https://github.com/MdMohsinHaider/User-Hive.git
 cd user-hive
 ```
 
@@ -151,10 +151,10 @@ The project uses the following dependencies:
 
 ```json
 {
-  "react": "^18.x.x",
-  "react-dom": "^18.x.x",
-  "react-router-dom": "^7.x.x",
-  "vite": "^4.x.x"
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
+  "react-router-dom": "^7.1.1",
+  "vite": "^6.0.5"
 }
 ```
 
