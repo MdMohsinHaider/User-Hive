@@ -13,7 +13,7 @@ ul,ol{
     list-style: none;
 }
 
-.primary-btn{
+.primary-btn {
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
@@ -21,13 +21,23 @@ ul,ol{
     color: black;
     font-weight: 800;
     cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.primary-btn:hover{
-    background-color: rgba(239,214,26);
+
+.primary-btn:hover {
+    background-color: rgba(239, 214, 26);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.primary-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 
-.secondary-btn{
+.secondary-btn {
     padding: 8px 20px;
     border: 1px solid gray;
     border-radius: 5px;
@@ -35,8 +45,18 @@ ul,ol{
     color: grey;
     font-weight: 800;
     cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
-.secondary-btn:hover{
-    background-color: rgba(128,128,128,0.094);
+.secondary-btn:hover {
+    background-color: rgba(128, 128, 128, 0.094);
+    color: rgb(154, 151, 151);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
