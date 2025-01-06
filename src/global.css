@@ -5,6 +5,18 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body {
+    background-image: url('https://m.media-amazon.com/images/I/919EcdOrSIL.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-position: center; /* Centers the image */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: none; /* For Firefox */
+}
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, Edge */
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -17,7 +29,7 @@ ul,ol{
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
-    background-color: yellow;
+    background: linear-gradient(to bottom right, #ffbb00, yellow,#ffa600);
     color: black;
     font-weight: 800;
     cursor: pointer;
@@ -26,7 +38,7 @@ ul,ol{
 }
 
 .primary-btn:hover {
-    background-color: rgba(239, 214, 26);
+    background: linear-gradient(to bottom right, #ffbb00, yellow,#ffa600);
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.15);
 }

@@ -1,0 +1,86 @@
+.container {
+    background: linear-gradient(to bottom right, #ffbb00, yellow,#ffa600); /* Diagonal yellow gradient */
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px 4px rgba(255, 255, 255, 0.25);
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    color: #000;
+    border-left: 16px solid #ffa600; /* Left side border */
+    border-bottom: 12px solid #ffa600; /* Bottom side border */
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.radioGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radioLabel {
+    font-size: 14px;
+}
+
+.radioInput {
+    margin-left: 5px;
+}
+
+.checkboxGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    transform: scale(1.2);
+}
+
+.buttonGroup {
+    text-align: center;
+}
+
+.button {
+    background-color: #000; /* Black button */
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #1e1e1e;
+}
