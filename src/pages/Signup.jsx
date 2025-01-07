@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './Signup.module.css';
+import axios from "axios"
 
 const Signup = () => {
     const [formData, setFormData] = useState({
@@ -23,15 +24,29 @@ const Signup = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData);
-        setFormData({
-            username: '',
-            email: '',
-            password: '',
-            phoneno: '',
-            gender: '',
-            dob: '',
-            agree: false,
-        });
+
+        if(formData.agree){
+            axios.post("http://localhost:4040/users",formData).then(()=>{
+                console.log("data sent Succesfuly");
+            }).catch((err)=>{
+                console.log(err);
+                console.log("Somthing went wrong");
+            })
+        }
+        else{
+            alert("accept the agreement");
+        }
+
+
+        // setFormData({
+        //     username: '',
+        //     email: '',
+        //     password: '',
+        //     phoneno: '',
+        //     gender: '',
+        //     dob: '',
+        //     agree: false,
+        // });
     };
 
     return (

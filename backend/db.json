@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": 1
+    },
+    {
+      "id": "5801",
+      "username": "mohsin",
+      "email": "mohsin@gmail.com",
+      "password": "mohsin123",
+      "phoneno": "8084527631",
+      "gender": "male",
+      "dob": "2025-01-07",
+      "agree": true
+    },
+    {
+      "id": "d9f1",
+      "username": "mohsin haider",
+      "email": "mohsin@gmail.com",
+      "password": "mohsin123",
+      "phoneno": "8084527631",
+      "gender": "male",
+      "dob": "2025-01-07",
+      "agree": true
+    }
+  ]
+}
