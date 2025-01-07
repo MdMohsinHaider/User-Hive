@@ -22,6 +22,27 @@
       "gender": "male",
       "dob": "2025-01-07",
       "agree": true
+    },
+    {
+      "id": "fbeb",
+      "username": "mohsin haider",
+      "email": "mohsin@gmail.com",
+      "password": "mohsin123",
+      "phoneno": "8084527631",
+      "gender": "male",
+      "dob": "2025-01-07",
+      "agree": true
+    },
+    {
+      "id": "0acf",
+      "username": "seeyoudevil0@gmail.com",
+      "email": "devil3@gamil.com",
+      "password": "132c",
+      "phoneno": "2345678790",
+      "gender": "male",
+      "dob": "2025-01-07",
+      "agree": true
     }
+    
   ]
 }

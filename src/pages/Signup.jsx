@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './Signup.module.css';
 import axios from "axios"
+import toast from 'react-hot-toast';
 
 const Signup = () => {
     const [formData, setFormData] = useState({
@@ -28,25 +29,26 @@ const Signup = () => {
         if(formData.agree){
             axios.post("http://localhost:4040/users",formData).then(()=>{
                 console.log("data sent Succesfuly");
+                toast.success('Successfully Register User');
             }).catch((err)=>{
                 console.log(err);
-                console.log("Somthing went wrong");
+                toast.error("This didn't work.");
             })
         }
         else{
-            alert("accept the agreement");
+            toast.error("plese accept the agreement");
         }
 
 
-        // setFormData({
-        //     username: '',
-        //     email: '',
-        //     password: '',
-        //     phoneno: '',
-        //     gender: '',
-        //     dob: '',
-        //     agree: false,
-        // });
+        setFormData({
+            username: '',
+            email: '',
+            password: '',
+            phoneno: '',
+            gender: '',
+            dob: '',
+            agree: false,
+        });
     };
 
     return (
