@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './Signup.module.css';
 import axios from "axios"
 import toast from 'react-hot-toast';
+import { useNavigate } from "react-router-dom"
 
 const Signup = () => {
     const [formData, setFormData] = useState({
@@ -13,6 +14,8 @@ const Signup = () => {
         dob: '',
         agree: false,
     });
+
+    let navigate = useNavigate();
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -26,16 +29,16 @@ const Signup = () => {
         e.preventDefault();
         console.log(formData);
 
-        if(formData.agree){
-            axios.post("http://localhost:4040/users",formData).then(()=>{
+        if (formData.agree) {
+            axios.post("http://localhost:4040/users", formData).then(() => {
                 console.log("data sent Succesfuly");
                 toast.success('Successfully Register User');
-            }).catch((err)=>{
+            }).catch((err) => {
                 console.log(err);
                 toast.error("This didn't work.");
             })
         }
-        else{
+        else {
             toast.error("plese accept the agreement");
         }
 
@@ -49,6 +52,8 @@ const Signup = () => {
             dob: '',
             agree: false,
         });
+
+        navigate("/login");
     };
 
     return (

@@ -35,6 +35,10 @@ ul,ol{
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 8px solid #ffa600d4;
+    border-bottom: 3px solid #ffa600fd;
+    border-right: 8px solid #ffa600a2;
+    border-top: 3px solid #ffa600ea;
 }
 
 .primary-btn:hover {

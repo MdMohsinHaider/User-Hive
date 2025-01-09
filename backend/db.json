@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1
+      "id": "1"
     },
     {
       "id": "5801",
@@ -42,7 +42,56 @@
       "gender": "male",
       "dob": "2025-01-07",
       "agree": true
+    },
+    {
+      "id": "865c",
+      "username": "seeyoudevil0@gmail.com",
+      "email": "devil@gamil.com",
+      "password": "3245yuytug",
+      "phoneno": "12345678",
+      "gender": "male",
+      "dob": "2025-01-08",
+      "agree": true
+    },
+    {
+      "id": "b90a",
+      "username": "SixthTest",
+      "email": "six@gami.com",
+      "password": "12345ge",
+      "phoneno": "12345456",
+      "gender": "male",
+      "dob": "2025-01-08",
+      "agree": true
+    },
+    {
+      "id": "a4ca",
+      "username": "seeyoudevil0@gmail.com",
+      "email": "devil@gamil.com",
+      "password": "hgdsbu4",
+      "phoneno": "123456787",
+      "gender": "male",
+      "dob": "2025-01-06",
+      "agree": true
+    },
+    {
+      "id": "a6db",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "phoneno": "8084527631",
+      "gender": "male",
+      "dob": "2025-01-01",
+      "agree": true
+    },
+    {
+      "id": "3c94",
+      "username": "mohsin",
+      "email": "mohsin@gmail.com",
+      "password": "123",
+      "phoneno": "123456",
+      "gender": "male",
+      "dob": "2025-01-01",
+      "agree": true
     }
-    
   ]
 }

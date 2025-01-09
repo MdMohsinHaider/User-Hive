@@ -6,8 +6,8 @@
     max-width: 400px;
     margin: 50px auto;
     color: #000;
-    border-left: 16px solid #ffa600; /* Left side border */
-    border-bottom: 12px solid #ffa600; /* Bottom side border */
+    border-left: 16px solid #ffa600d4; /* Left side border */
+    border-bottom: 12px solid #ffa600da; /* Bottom side border */
 }
 
 .title {

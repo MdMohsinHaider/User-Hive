@@ -1,0 +1,81 @@
+/* Admin Dashboard Styles (Modular CSS) */
+.dashboard {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f9a2; */
+    background: linear-gradient(to bottom right, transparent,#f4f4f9a2 , #f1e99ca2,#f4f4f9a2,transparent);
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.heading {
+    text-align: center;
+    color: #333;
+}
+
+.adminInfo {
+    background: linear-gradient(to bottom right, #ffbb00, yellow, #ffa600);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 16px solid #ffa600d4;
+    border-bottom: 12px solid #ffa600fd;
+    border-right: 16px solid #ffa600a2;
+    border-top: 12px solid #ffa600ea;
+}
+
+.adminInfoTitle {
+    color: #007bff;
+    font-weight: bolder;
+}
+
+.adminInfoText {
+    color: #555;
+    font-size: 16px;
+}
+
+.errorMessage {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.usersTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.usersTable th, .usersTable td {
+    padding: 12px;
+    border: 2px solid #ddd;
+    text-align: left;
+}
+
+.usersTable th {
+    background-color: #007bff;
+    color: white;
+}
+
+
+.usersTable tr:nth-child(even) {
+    /* background-color: #fafd6391; */
+    background: linear-gradient(to bottom right, #ffc400, transparent, #ffd900);
+    font-weight:300;
+}
+.usersTable tr:nth-child(odd) {
+    /* background-color: #ffb5557c; */
+    background: linear-gradient(to bottom left, transparent,rgba(255, 255, 0, 0.664), transparent);
+    font-weight:300;
+}
+
+.usersTable tr:hover {
+    /* background-color: transparent; */
+    background-color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    color: rgb(0, 0, 0);
+}
