@@ -92,6 +92,16 @@
       "gender": "male",
       "dob": "2025-01-01",
       "agree": true
+    },
+    {
+      "id": "4d6b",
+      "username": "Kundan krishna",
+      "email": "kundan@gamil.com",
+      "password": "12345",
+      "phoneno": "6204323166",
+      "gender": "male",
+      "dob": "2024-12-29",
+      "agree": true
     }
   ]
 }
