@@ -75,17 +75,17 @@
     },
     {
       "id": "a6db",
-      "username": "Admin",
+      "username": "admin",
       "email": "admin@gmail.com",
       "password": "admin123",
       "phoneno": "8084527631",
       "gender": "male",
-      "dob": "2001-10-29",
+      "dob": "2025-01-01",
       "agree": true
     },
     {
       "id": "3c94",
-      "username": "Mohsin",
+      "username": "mohsin",
       "email": "mohsin@gmail.com",
       "password": "123",
       "phoneno": "123456",

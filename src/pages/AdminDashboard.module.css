@@ -65,12 +65,12 @@
 .usersTable tr:nth-child(even) {
     /* background-color: #fafd6391; */
     background: linear-gradient(to bottom right, #ffc400, transparent, #ffd900);
-    font-weight:300;
+    /* font-weight:300; */
 }
 .usersTable tr:nth-child(odd) {
     /* background-color: #ffb5557c; */
     background: linear-gradient(to bottom left, transparent,rgba(255, 255, 0, 0.664), transparent);
-    font-weight:300;
+    /* font-weight:300; */
 }
 
 .usersTable tr:hover {
