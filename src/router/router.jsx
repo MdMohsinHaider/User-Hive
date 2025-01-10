@@ -5,6 +5,8 @@ import Login from "../pages/Login"
 import Signup from "../pages/Signup"
 import Profile from "../pages/Profile";
 import AdminDashboard from "../pages/AdminDashboard";
+import UserPrivate from "./UserPrivate";
+import AdminPrivate from "./AdminPrivate";
 
 
 
@@ -27,11 +29,19 @@ export let myRoutes = createBrowserRouter([
             },
             {
                 path:"/profile",
-                element:<Profile/>,
+                element:(
+                    <UserPrivate>
+                        <Profile/> {/* Protected Route */}
+                    </UserPrivate>
+                ),
             },
             {
                 path:"/admin",
-                element:<AdminDashboard/>,
+                element:(
+                    <AdminPrivate>
+                        <AdminDashboard/>
+                    </AdminPrivate>
+                ),
             }
         ]
     }
