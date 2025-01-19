@@ -1,21 +1,8 @@
 {
   "users": [
     {
-      "id": "1"
-    },
-    {
       "id": "5801",
       "username": "mohsin",
-      "email": "mohsin@gmail.com",
-      "password": "mohsin123",
-      "phoneno": "8084527631",
-      "gender": "male",
-      "dob": "2025-01-07",
-      "agree": true
-    },
-    {
-      "id": "d9f1",
-      "username": "mohsin haider",
       "email": "mohsin@gmail.com",
       "password": "mohsin123",
       "phoneno": "8084527631",
@@ -31,46 +18,6 @@
       "phoneno": "8084527631",
       "gender": "male",
       "dob": "2025-01-07",
-      "agree": true
-    },
-    {
-      "id": "0acf",
-      "username": "seeyoudevil0@gmail.com",
-      "email": "devil3@gamil.com",
-      "password": "132c",
-      "phoneno": "2345678790",
-      "gender": "male",
-      "dob": "2025-01-07",
-      "agree": true
-    },
-    {
-      "id": "865c",
-      "username": "seeyoudevil0@gmail.com",
-      "email": "devil@gamil.com",
-      "password": "3245yuytug",
-      "phoneno": "12345678",
-      "gender": "male",
-      "dob": "2025-01-08",
-      "agree": true
-    },
-    {
-      "id": "b90a",
-      "username": "SixthTest",
-      "email": "six@gami.com",
-      "password": "12345ge",
-      "phoneno": "12345456",
-      "gender": "male",
-      "dob": "2025-01-08",
-      "agree": true
-    },
-    {
-      "id": "a4ca",
-      "username": "seeyoudevil0@gmail.com",
-      "email": "devil@gamil.com",
-      "password": "hgdsbu4",
-      "phoneno": "123456787",
-      "gender": "male",
-      "dob": "2025-01-06",
       "agree": true
     },
     {
@@ -101,6 +48,26 @@
       "phoneno": "6204323166",
       "gender": "male",
       "dob": "2024-12-29",
+      "agree": true
+    },
+    {
+      "id": "1825",
+      "username": "Mithlesh",
+      "email": "mithlesh@gmail.com",
+      "password": "mithlesh123",
+      "phoneno": "1234567890",
+      "gender": "male",
+      "dob": "2025-01-25",
+      "agree": true
+    },
+    {
+      "id": "defa",
+      "username": "test",
+      "email": "nick@gamil.com",
+      "password": "123",
+      "phoneno": "1234567890",
+      "gender": "male",
+      "dob": "2025-01-15",
       "agree": true
     }
   ]

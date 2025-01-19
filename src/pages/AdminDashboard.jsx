@@ -1,17 +1,22 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import styles from './AdminDashboard.module.css';
+import toast from 'react-hot-toast';
+import {Link} from "react-router-dom"
 
 const AdminDashboard = () => {
     const adminID = sessionStorage.getItem("adminID");
     const [loggedInAdmin, setLoggedInAdmin] = useState(null);
     const [users, setUsers] = useState([]);  // Ensure users is always an array
     const [error, setError] = useState(null);
+    const [toggle, setToggle] = useState(false);
 
     useEffect(() => {
         async function getLoggedInAdmin() {
             try {
                 const { data } = await axios.get(`http://localhost:4040/users/${adminID}`);
+                console.log(data);
+                
                 setLoggedInAdmin(data);
             } catch (err) {
                 setError("Failed to fetch admin data");
@@ -36,7 +41,20 @@ const AdminDashboard = () => {
         } else {
             setError("Admin not logged in");
         }
-    }, [adminID]);
+    }, [adminID,toggle]);
+
+    async function deleteUser(id) {
+        try {
+            await axios.delete(`http://localhost:4040/users/${id}`);
+            toast.success("User delete");
+            setToggle(!toggle);
+            console.log("user delete ",id);
+        } catch (error) {
+            toast.error("unable to delete");
+            console.log(error);
+            
+        }
+    }
 
     return (
         <div className={styles.dashboard}>
@@ -66,6 +84,8 @@ const AdminDashboard = () => {
                             <th>Email</th>
                             <th>Phone</th>
                             <th>Gender</th>
+                            <th>Delete</th>
+                            <th>Edit</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -75,6 +95,8 @@ const AdminDashboard = () => {
                                 <td>{user.email}</td>
                                 <td>{user.phoneno}</td>
                                 <td>{user.gender}</td>
+                                <td><button className="primary-btn" onClick={()=>deleteUser(user.id)}>Delete</button></td>
+                                <td><button className="primary-btn"><Link to={`/edit/${user.id}`}>Edit</Link></button></td>
                             </tr>
                         ))}
                     </tbody>

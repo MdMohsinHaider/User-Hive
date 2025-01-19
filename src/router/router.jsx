@@ -7,6 +7,7 @@ import Profile from "../pages/Profile";
 import AdminDashboard from "../pages/AdminDashboard";
 import UserPrivate from "./UserPrivate";
 import AdminPrivate from "./AdminPrivate";
+import EditUser from "../pages/EditUser";
 
 
 
@@ -40,6 +41,14 @@ export let myRoutes = createBrowserRouter([
                 element:(
                     <AdminPrivate>
                         <AdminDashboard/>
+                    </AdminPrivate>
+                ),
+            },
+            {
+                path:"/edit/:id", // dynamic routes
+                element:(
+                    <AdminPrivate>
+                        <EditUser/>
                     </AdminPrivate>
                 ),
             }

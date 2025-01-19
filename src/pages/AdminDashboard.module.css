@@ -14,7 +14,7 @@
 }
 
 .adminInfo {
-    background: linear-gradient(to bottom right, #ffbb00, yellow, #ffa600);
+    background: linear-gradient(to bottom right, transparent,#ffbb00, yellow, #ffa600);
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
@@ -65,12 +65,12 @@
 .usersTable tr:nth-child(even) {
     /* background-color: #fafd6391; */
     background: linear-gradient(to bottom right, #ffc400, transparent, #ffd900);
-    /* font-weight:300; */
+    font-weight:300;
 }
 .usersTable tr:nth-child(odd) {
     /* background-color: #ffb5557c; */
     background: linear-gradient(to bottom left, transparent,rgba(255, 255, 0, 0.664), transparent);
-    /* font-weight:300; */
+    font-weight:300;
 }
 
 .usersTable tr:hover {
@@ -78,4 +78,5 @@
     background-color: rgb(255, 255, 255);
     /* font-weight: bold; */
     color: rgb(0, 0, 0);
+    font-weight:400 ;
 }

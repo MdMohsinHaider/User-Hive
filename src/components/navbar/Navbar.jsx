@@ -33,6 +33,7 @@ const Navbar = () => {
                 <li><Link to="/">Home</Link></li>
                 {adminID || userID ? (
                     <Fragment>
+                        <li><Link to={adminID ? "/admin":"/profile"} >profile</Link></li>
                         <li className="secondary-btn" onClick={logout}>LogOut</li>
                     </Fragment>
                 ) : (
