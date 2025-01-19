@@ -3,6 +3,7 @@ import { useEffect, useState, } from "react";
 import { useParams } from "react-router-dom"
 import toast from 'react-hot-toast';
 import { useNavigate } from "react-router-dom"
+import styles from "./EditUser.module.css"
 
 
 
@@ -46,30 +47,55 @@ const EditUser = () => {
     }
 
     return (
-        <div>
-            <center>
-            <h1>EditUser</h1>
-            <form onSubmit={formSubmit} >
-                <label>Username</label>
-                <input type="text" name="username" onChange={handleChange} value={editEmp.username}/>
-                <br /><br />
-
-                <label>Email</label>
-                <input type="email" name="email" onChange={handleChange} value={editEmp.email}/>
-                <br /><br />
-
-                <label>Password</label>
-                <input type="password"name="password" onChange={handleChange} value={editEmp.password}/>
-                <br /><br />
-
-                <label>Phone number</label>
-                <input type="tel" name="phoneno" onChange={handleChange} value={editEmp.phoneno}/>
-                <br /><br />
-
-                <button type="submit" >Submit</button>
-
+        <div className={styles.container}>
+            <h1 className={styles.title}>Edit User</h1>
+            <form onSubmit={formSubmit} className={styles.form}>
+                <div className={styles.formGroup}>
+                    <label className={styles.label}>Username</label>
+                    <input
+                        type="text"
+                        name="username"
+                        value={editEmp.username || ''}
+                        onChange={handleChange}
+                        className={styles.input}
+                    />
+                </div>
+                <div className={styles.formGroup}>
+                    <label className={styles.label}>Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        value={editEmp.email || ''}
+                        onChange={handleChange}
+                        className={styles.input}
+                    />
+                </div>
+                <div className={styles.formGroup}>
+                    <label className={styles.label}>Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        value={editEmp.password || ''}
+                        onChange={handleChange}
+                        className={styles.input}
+                    />
+                </div>
+                <div className={styles.formGroup}>
+                    <label className={styles.label}>Phone Number</label>
+                    <input
+                        type="tel"
+                        name="phoneno"
+                        value={editEmp.phoneno || ''}
+                        onChange={handleChange}
+                        className={styles.input}
+                    />
+                </div>
+                <div className={styles.buttonGroup}>
+                    <button type="submit" className={styles.button}>
+                        Submit
+                    </button>
+                </div>
             </form>
-            </center>
         </div>
     )
 }

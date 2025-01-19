@@ -16,7 +16,6 @@ const AdminDashboard = () => {
             try {
                 const { data } = await axios.get(`http://localhost:4040/users/${adminID}`);
                 console.log(data);
-                
                 setLoggedInAdmin(data);
             } catch (err) {
                 setError("Failed to fetch admin data");
@@ -84,6 +83,7 @@ const AdminDashboard = () => {
                             <th>Email</th>
                             <th>Phone</th>
                             <th>Gender</th>
+                            <th>Date Of Birth</th>
                             <th>Delete</th>
                             <th>Edit</th>
                         </tr>
@@ -95,7 +95,10 @@ const AdminDashboard = () => {
                                 <td>{user.email}</td>
                                 <td>{user.phoneno}</td>
                                 <td>{user.gender}</td>
+                                <td>{user.dob}</td>
+                                
                                 <td><button className="primary-btn" onClick={()=>deleteUser(user.id)}>Delete</button></td>
+
                                 <td><button className="primary-btn"><Link to={`/edit/${user.id}`}>Edit</Link></button></td>
                             </tr>
                         ))}

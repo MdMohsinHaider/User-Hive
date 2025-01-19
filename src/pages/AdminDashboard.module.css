@@ -14,15 +14,15 @@
 }
 
 .adminInfo {
-    background: linear-gradient(to bottom right, transparent,#ffbb00, yellow, #ffa600);
+    background: linear-gradient(to bottom right,#ffbb00, yellow, #ffa600);
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-left: 16px solid #ffa600d4;
-    border-bottom: 12px solid #ffa600fd;
-    border-right: 16px solid #ffa600a2;
-    border-top: 12px solid #ffa600ea;
+    border-left: 10px solid #ffa600d4;
+    border-bottom: 6px solid #ffa600fd;
+    border-right: 10px solid #ffa600a2;
+    border-top: 6px solid #ffa600ea;
 }
 
 .adminInfoTitle {

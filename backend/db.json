@@ -2,10 +2,10 @@
   "users": [
     {
       "id": "5801",
-      "username": "mohsin",
+      "username": "Mohsin",
       "email": "mohsin@gmail.com",
       "password": "mohsin123",
-      "phoneno": "8084527631",
+      "phoneno": "1234567890",
       "gender": "male",
       "dob": "2025-01-07",
       "agree": true
@@ -32,7 +32,7 @@
     },
     {
       "id": "3c94",
-      "username": "mohsin",
+      "username": "Md Mohsin Haider",
       "email": "mohsin@gmail.com",
       "password": "123",
       "phoneno": "123456",

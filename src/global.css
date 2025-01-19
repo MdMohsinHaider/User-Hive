@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat; /* Prevents tiling of the image */
     background-position: center; /* Centers the image */
     overflow-y: scroll; /* Enable vertical scrolling */
-    scrollbar-width: none; /* For Firefox */
+
 }
 body::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, Edge */
